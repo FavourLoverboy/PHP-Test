@@ -1,7 +1,7 @@
 <?php 
-    session_start();
-    include('config/dblink.php');
-    $collect = new DB();
+    // session_start();
+    // include('config/dblink.php');
+    // $collect = new DB();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -22,10 +22,18 @@
         <!-- Custom styles for this template-->
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/login.css">
     </head>
     <body>
         <div class="reset">
-
+            <header>
+            <h1>Reset Password</h1>
+        </header>
+<form>
+            <input type="email" name="email" placeholder="Enter Registered Email" required>
+          
+            <input type="submit" value='Get Code'>
+        </form>
         </div>
         <!-- Custom JavaScript -->
         <script src="js/main.js"></script>
